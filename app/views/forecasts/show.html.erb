@@ -1,0 +1,45 @@
+<h1 class="title">🌤️ Weather Forecast</h1>
+
+<div class="forecast-container">
+  <%= form_with url: show_forecast_path, method: :get, local: true, html: {class: 'address-form'} do %>
+    <label for="address" class="address-label">Enter your 6-digit pin code:</label>
+    <%= text_field_tag :address, @address,
+          placeholder: "e.g., 271308",
+          required: true,
+          maxlength: 6,
+          pattern: "\\d{6}",
+          class: "address-input",
+          oninput: "this.value=this.value.replace(/[^0-9]/g,'');" %>
+    <%= submit_tag "Get Forecast", class: "submit-button" %>
+  <% end %>
+
+  <% if flash[:alert] %>
+    <div class="error-message">
+      <%= flash[:alert] %>
+    </div>
+  <% end %>
+
+  <% if @district && @state && @country %>
+    <div class="place-details">
+      <h2 class="location">Location: <%= @district %>, <%= @state %>, <%= @country %></h2>
+    </div>
+  <% end %>
+
+  <% if @weather %>
+    <div class="forecast-details">
+      <ul>
+        <li><strong>Temperature:</strong> <%= @weather[:temperature] %> ℃</li>
+        <li><strong>Min Temperature:</strong> <%= @weather[:temperature_min] %> ℃</li>
+        <li><strong>Max Temperature:</strong> <%= @weather[:temperature_max] %> ℃</li>
+        <li><strong>Humidity:</strong> <%= @weather[:humidity] %> %</li>
+        <li><strong>Pressure:</strong> <%= @weather[:pressure] %> millibars</li>
+        <li><strong>Description:</strong> <%= @weather[:description].capitalize %></li>
+      </ul>
+      <p class="cache-indicator">
+        Data source: <%= @weather_cache_exist ? "Cached (less than 30 mins old)" : "Live Fetch" %>
+      </p>
+    </div>
+  <% else %>
+    <p class="info-text">Please enter a valid pin code to receive location details and weather forecast.</p>
+  <% end %>
+</div>

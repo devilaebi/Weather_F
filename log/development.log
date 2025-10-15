@@ -1,0 +1,534 @@
+[dotenv] Set [36mWEATHER_API_KEY[0m
+[dotenv] Loaded [33m.env[0m
+Started GET "/" for 127.0.0.1 at 2025-10-13 13:16:49 +0530
+  
+ActiveRecord::ConnectionNotEstablished (connection to server on socket "/var/run/postgresql/.s.PGSQL.5432" failed: FATAL:  role "aebinto" does not exist
+):
+  
+activerecord (7.1.5.2) lib/active_record/connection_adapters/postgresql_adapter.rb:80:in `rescue in new_client'
+activerecord (7.1.5.2) lib/active_record/connection_adapters/postgresql_adapter.rb:68:in `new_client'
+activerecord (7.1.5.2) lib/active_record/connection_adapters/postgresql_adapter.rb:980:in `connect'
+activerecord (7.1.5.2) lib/active_record/connection_adapters/postgresql_adapter.rb:992:in `reconnect'
+activerecord (7.1.5.2) lib/active_record/connection_adapters/abstract_adapter.rb:685:in `block in reconnect!'
+activesupport (7.1.5.2) lib/active_support/concurrency/null_lock.rb:9:in `synchronize'
+activerecord (7.1.5.2) lib/active_record/connection_adapters/abstract_adapter.rb:684:in `reconnect!'
+activerecord (7.1.5.2) lib/active_record/connection_adapters/abstract_adapter.rb:786:in `block in verify!'
+activesupport (7.1.5.2) lib/active_support/concurrency/null_lock.rb:9:in `synchronize'
+activerecord (7.1.5.2) lib/active_record/connection_adapters/abstract_adapter.rb:777:in `verify!'
+activerecord (7.1.5.2) lib/active_record/connection_adapters/abstract_adapter.rb:794:in `connect!'
+activerecord (7.1.5.2) lib/active_record/connection_adapters/abstract_adapter.rb:1000:in `block in with_raw_connection'
+activesupport (7.1.5.2) lib/active_support/concurrency/null_lock.rb:9:in `synchronize'
+activerecord (7.1.5.2) lib/active_record/connection_adapters/abstract_adapter.rb:999:in `with_raw_connection'
+activerecord (7.1.5.2) lib/active_record/connection_adapters/abstract_adapter.rb:1112:in `valid_raw_connection'
+activerecord (7.1.5.2) lib/active_record/connection_adapters/postgresql_adapter.rb:616:in `get_database_version'
+activerecord (7.1.5.2) lib/active_record/connection_adapters/schema_cache.rb:374:in `database_version'
+activerecord (7.1.5.2) lib/active_record/connection_adapters/schema_cache.rb:70:in `database_version'
+activerecord (7.1.5.2) lib/active_record/connection_adapters/schema_cache.rb:200:in `database_version'
+activerecord (7.1.5.2) lib/active_record/connection_adapters/abstract_adapter.rb:870:in `database_version'
+activerecord (7.1.5.2) lib/active_record/connection_adapters/postgresql_adapter.rb:644:in `check_version'
+activerecord (7.1.5.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:680:in `new_connection'
+activerecord (7.1.5.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:730:in `checkout_new_connection'
+activerecord (7.1.5.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:709:in `try_to_checkout_new_connection'
+activerecord (7.1.5.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:654:in `acquire_connection'
+activerecord (7.1.5.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:353:in `checkout'
+activerecord (7.1.5.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:182:in `connection'
+activerecord (7.1.5.2) lib/active_record/migration/pending_migration_connection.rb:8:in `establish_temporary_connection'
+activerecord (7.1.5.2) lib/active_record/migration.rb:774:in `block in pending_migrations'
+activerecord (7.1.5.2) lib/active_record/migration.rb:773:in `each'
+activerecord (7.1.5.2) lib/active_record/migration.rb:773:in `pending_migrations'
+activerecord (7.1.5.2) lib/active_record/migration.rb:752:in `check_pending_migrations'
+activerecord (7.1.5.2) lib/active_record/migration.rb:644:in `block (2 levels) in call'
+activesupport (7.1.5.2) lib/active_support/file_update_checker.rb:85:in `execute'
+activerecord (7.1.5.2) lib/active_record/migration.rb:649:in `block in call'
+activerecord (7.1.5.2) lib/active_record/migration.rb:641:in `synchronize'
+activerecord (7.1.5.2) lib/active_record/migration.rb:641:in `call'
+actionpack (7.1.5.2) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+activesupport (7.1.5.2) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (7.1.5.2) lib/action_dispatch/middleware/callbacks.rb:28:in `call'
+actionpack (7.1.5.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.1.5.2) lib/action_dispatch/middleware/actionable_exceptions.rb:16:in `call'
+actionpack (7.1.5.2) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+web-console (4.2.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.1.5.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (7.1.5.2) lib/rails/rack/logger.rb:37:in `call_app'
+railties (7.1.5.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (7.1.5.2) lib/active_support/tagged_logging.rb:139:in `block in tagged'
+activesupport (7.1.5.2) lib/active_support/tagged_logging.rb:39:in `tagged'
+activesupport (7.1.5.2) lib/active_support/tagged_logging.rb:139:in `tagged'
+activesupport (7.1.5.2) lib/active_support/broadcast_logger.rb:241:in `method_missing'
+railties (7.1.5.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.5.2) lib/sprockets/rails/quiet_assets.rb:17:in `call'
+actionpack (7.1.5.2) lib/action_dispatch/middleware/remote_ip.rb:92:in `call'
+actionpack (7.1.5.2) lib/action_dispatch/middleware/request_id.rb:28:in `call'
+rack (3.2.3) lib/rack/method_override.rb:28:in `call'
+rack (3.2.3) lib/rack/runtime.rb:24:in `call'
+actionpack (7.1.5.2) lib/action_dispatch/middleware/server_timing.rb:59:in `block in call'
+actionpack (7.1.5.2) lib/action_dispatch/middleware/server_timing.rb:24:in `collect_events'
+actionpack (7.1.5.2) lib/action_dispatch/middleware/server_timing.rb:58:in `call'
+actionpack (7.1.5.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.1.5.2) lib/action_dispatch/middleware/static.rb:25:in `call'
+rack (3.2.3) lib/rack/sendfile.rb:131:in `call'
+actionpack (7.1.5.2) lib/action_dispatch/middleware/host_authorization.rb:141:in `call'
+railties (7.1.5.2) lib/rails/engine.rb:536:in `call'
+puma (7.0.4) lib/puma/configuration.rb:299:in `call'
+puma (7.0.4) lib/puma/request.rb:101:in `block in handle_request'
+puma (7.0.4) lib/puma/thread_pool.rb:346:in `with_force_shutdown'
+puma (7.0.4) lib/puma/request.rb:100:in `handle_request'
+puma (7.0.4) lib/puma/server.rb:506:in `process_client'
+puma (7.0.4) lib/puma/server.rb:265:in `block in run'
+puma (7.0.4) lib/puma/thread_pool.rb:173:in `block in spawn_thread'
+[dotenv] Set [36mWEATHER_API_KEY[0m
+[dotenv] Loaded [33m.env[0m
+  [1m[35m (84.5ms)[0m  [1m[35mCREATE DATABASE "weather_app_development" ENCODING = 'unicode'[0m
+  [1m[35m (67.2ms)[0m  [1m[35mCREATE DATABASE "weather_app_test" ENCODING = 'unicode'[0m
+[dotenv] Set [36mWEATHER_API_KEY[0m
+[dotenv] Loaded [33m.env[0m
+  [1m[35m (3.0ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  [1m[35m (1.4ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT pg_try_advisory_lock(6030057993707673765)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.6ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [[nil, "environment"]]
+  [1m[36mActiveRecord::InternalMetadata Create (0.9ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ('environment', 'development', '2025-10-13 07:53:46.885980', '2025-10-13 07:53:46.885983') RETURNING "key"[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(6030057993707673765)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+[dotenv] Set [36mWEATHER_API_KEY[0m
+[dotenv] Loaded [33m.env[0m
+Started GET "/" for 127.0.0.1 at 2025-10-13 13:23:58 +0530
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/aebinto/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/railties-7.1.5.2/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/aebinto/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/railties-7.1.5.2/lib/rails/templates/rails/welcome/index.html.erb (Duration: 0.8ms | Allocations: 388)
+Completed 200 OK in 36ms (Views: 3.8ms | ActiveRecord: 0.0ms | Allocations: 4965)
+
+
+Started GET "/show" for 127.0.0.1 at 2025-10-13 13:24:06 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/show"):
+  
+[dotenv] Set [36mWEATHER_API_KEY[0m
+[dotenv] Loaded [33m.env[0m
+Started GET "/show" for ::1 at 2025-10-13 13:27:43 +0530
+  [1m[36mActiveRecord::SchemaMigration Load (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ForecastsController#show as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering forecasts/show.html.erb within layouts/application
+  Rendered forecasts/show.html.erb within layouts/application (Duration: 12.4ms | Allocations: 5425)
+  Rendered layout layouts/application.html.erb (Duration: 12.8ms | Allocations: 5557)
+Completed 500 Internal Server Error in 1175ms (ActiveRecord: 0.0ms | Allocations: 13499)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `forecast_path' for #<ActionView::Base:0x0000000000aa50>
+
+'.freeze; @output_buffer.append=  form_with url: forecast_path, method: :get, local: true do ; @output_buffer.safe_append='
+                                                 ^^^^^^^^^^^^^):
+    1: <h1>Forecast</h1>
+    2: <%= form_with url: forecast_path, method: :get, local: true do %>
+    3:   <%= label_tag :address, "What is your address?" %>
+    4:   <%= text_field_tag :address, @address, size: 70 %>
+    5:   <%= submit_tag "Lookup" %>
+  
+app/views/forecasts/show.html.erb:2
+Started GET "/show" for ::1 at 2025-10-13 13:28:53 +0530
+Processing by ForecastsController#show as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering forecasts/show.html.erb within layouts/application
+  Rendered forecasts/show.html.erb within layouts/application (Duration: 2.5ms | Allocations: 655)
+  Rendered layout layouts/application.html.erb (Duration: 212.0ms | Allocations: 102664)
+Completed 200 OK in 1069ms (Views: 217.2ms | ActiveRecord: 0.0ms | Allocations: 105676)
+
+
+Started GET "/show?address=Raebareli+Uttarpradesh&commit=Lookup" for ::1 at 2025-10-13 13:29:42 +0530
+Processing by ForecastsController#show as HTML
+  Parameters: {"address"=>"Raebareli Uttarpradesh", "commit"=>"Lookup"}
+Completed 500 Internal Server Error in 777ms (ActiveRecord: 0.0ms | Allocations: 2821)
+
+
+  
+NoMethodError (undefined method `[]' for nil:NilClass
+
+      latitude: loc['lat'],
+                   ^^^^^^^):
+  
+app/services/geocode_service.rb:10:in `call'
+app/controllers/forecasts_controller.rb:5:in `show'
+Started GET "/show" for 127.0.0.1 at 2025-10-13 13:29:57 +0530
+Processing by ForecastsController#show as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering forecasts/show.html.erb within layouts/application
+  Rendered forecasts/show.html.erb within layouts/application (Duration: 0.3ms | Allocations: 160)
+  Rendered layout layouts/application.html.erb (Duration: 2.0ms | Allocations: 1528)
+Completed 200 OK in 871ms (Views: 2.4ms | ActiveRecord: 0.0ms | Allocations: 3541)
+
+
+Started GET "/show?address=1+Infinite+Loop%2C+Uttarpradesh%2C+India&commit=Lookup" for 127.0.0.1 at 2025-10-13 13:30:14 +0530
+Processing by ForecastsController#show as HTML
+  Parameters: {"address"=>"1 Infinite Loop, Uttarpradesh, India", "commit"=>"Lookup"}
+Completed 500 Internal Server Error in 873ms (ActiveRecord: 0.0ms | Allocations: 2655)
+
+
+  
+NoMethodError (undefined method `[]' for nil:NilClass
+
+      latitude: loc['lat'],
+                   ^^^^^^^):
+  
+app/services/geocode_service.rb:10:in `call'
+app/controllers/forecasts_controller.rb:5:in `show'
+Started GET "/show" for 127.0.0.1 at 2025-10-13 13:31:01 +0530
+Processing by ForecastsController#show as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering forecasts/show.html.erb within layouts/application
+  Rendered forecasts/show.html.erb within layouts/application (Duration: 0.3ms | Allocations: 124)
+  Rendered layout layouts/application.html.erb (Duration: 1.9ms | Allocations: 1485)
+Completed 200 OK in 907ms (Views: 2.3ms | ActiveRecord: 0.0ms | Allocations: 3319)
+
+
+Started GET "/show" for 127.0.0.1 at 2025-10-13 13:32:57 +0530
+Processing by ForecastsController#show as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering forecasts/show.html.erb within layouts/application
+  Rendered forecasts/show.html.erb within layouts/application (Duration: 1.9ms | Allocations: 608)
+  Rendered layout layouts/application.html.erb (Duration: 24.4ms | Allocations: 23042)
+Completed 200 OK in 888ms (Views: 27.3ms | ActiveRecord: 0.0ms | Allocations: 25963)
+
+
+Started GET "/show?address=271308&commit=Get+Forecast" for 127.0.0.1 at 2025-10-13 13:33:08 +0530
+Processing by ForecastsController#show as HTML
+  Parameters: {"address"=>"271308", "commit"=>"Get Forecast"}
+  Rendering layout layouts/application.html.erb
+  Rendering forecasts/show.html.erb within layouts/application
+  Rendered forecasts/show.html.erb within layouts/application (Duration: 0.5ms | Allocations: 171)
+  Rendered layout layouts/application.html.erb (Duration: 4.1ms | Allocations: 1693)
+Completed 200 OK in 1024ms (Views: 5.0ms | ActiveRecord: 0.0ms | Allocations: 4722)
+
+
+Started GET "/show?address=Raebareli&commit=Get+Forecast" for 127.0.0.1 at 2025-10-13 13:33:39 +0530
+Processing by ForecastsController#show as HTML
+  Parameters: {"address"=>"Raebareli", "commit"=>"Get Forecast"}
+  Rendering layout layouts/application.html.erb
+  Rendering forecasts/show.html.erb within layouts/application
+  Rendered forecasts/show.html.erb within layouts/application (Duration: 0.6ms | Allocations: 128)
+  Rendered layout layouts/application.html.erb (Duration: 4.3ms | Allocations: 1454)
+Completed 200 OK in 948ms (Views: 5.3ms | ActiveRecord: 0.0ms | Allocations: 4087)
+
+
+Started GET "/show?address=Lucknow&commit=Get+Forecast" for 127.0.0.1 at 2025-10-13 13:33:48 +0530
+Processing by ForecastsController#show as HTML
+  Parameters: {"address"=>"Lucknow", "commit"=>"Get Forecast"}
+  Rendering layout layouts/application.html.erb
+  Rendering forecasts/show.html.erb within layouts/application
+  Rendered forecasts/show.html.erb within layouts/application (Duration: 0.5ms | Allocations: 128)
+  Rendered layout layouts/application.html.erb (Duration: 4.1ms | Allocations: 1457)
+Completed 200 OK in 966ms (Views: 4.9ms | ActiveRecord: 0.0ms | Allocations: 4099)
+
+
+Started GET "/show?address=271308%5C&commit=Get+Forecast" for 127.0.0.1 at 2025-10-13 13:34:18 +0530
+Processing by ForecastsController#show as HTML
+  Parameters: {"address"=>"271308\\", "commit"=>"Get Forecast"}
+  Rendering layout layouts/application.html.erb
+  Rendering forecasts/show.html.erb within layouts/application
+  Rendered forecasts/show.html.erb within layouts/application (Duration: 0.4ms | Allocations: 129)
+  Rendered layout layouts/application.html.erb (Duration: 2.0ms | Allocations: 1458)
+Completed 200 OK in 834ms (Views: 2.6ms | ActiveRecord: 0.0ms | Allocations: 3247)
+
+
+Started GET "/show?address=271308&commit=Get+Forecast" for 127.0.0.1 at 2025-10-13 13:34:24 +0530
+Processing by ForecastsController#show as HTML
+  Parameters: {"address"=>"271308", "commit"=>"Get Forecast"}
+  Rendering layout layouts/application.html.erb
+  Rendering forecasts/show.html.erb within layouts/application
+  Rendered forecasts/show.html.erb within layouts/application (Duration: 0.8ms | Allocations: 128)
+  Rendered layout layouts/application.html.erb (Duration: 4.3ms | Allocations: 1451)
+Completed 200 OK in 887ms (Views: 5.2ms | ActiveRecord: 0.0ms | Allocations: 3238)
+
+
+Started GET "/show?address=271308%27%27%27&commit=Get+Forecast" for 127.0.0.1 at 2025-10-13 13:34:30 +0530
+Processing by ForecastsController#show as HTML
+  Parameters: {"address"=>"271308'''", "commit"=>"Get Forecast"}
+  Rendering layout layouts/application.html.erb
+  Rendering forecasts/show.html.erb within layouts/application
+  Rendered forecasts/show.html.erb within layouts/application (Duration: 0.5ms | Allocations: 129)
+  Rendered layout layouts/application.html.erb (Duration: 4.2ms | Allocations: 1461)
+Completed 200 OK in 789ms (Views: 5.1ms | ActiveRecord: 0.0ms | Allocations: 3241)
+
+
+Started GET "/show?address=271308%27%27%27&commit=Get+Forecast" for 127.0.0.1 at 2025-10-13 13:43:07 +0530
+  
+Zeitwerk::NameError (expected file /home/aebinto/weather/Weather_F/weather_app/app/controllers/forecasts_controller.rb to define constant ForecastsController, but didn't
+
+      raise Zeitwerk::NameError.new(msg, cref.cname)
+      ^^^^^):
+  
+zeitwerk (2.6.18) lib/zeitwerk/loader/callbacks.rb:32:in `on_file_autoloaded'
+zeitwerk (2.6.18) lib/zeitwerk/kernel.rb:27:in `require'
+activesupport (7.1.5.2) lib/active_support/inflector/methods.rb:290:in `const_get'
+activesupport (7.1.5.2) lib/active_support/inflector/methods.rb:290:in `constantize'
+activesupport (7.1.5.2) lib/active_support/core_ext/string/inflections.rb:74:in `constantize'
+actionpack (7.1.5.2) lib/action_dispatch/http/request.rb:90:in `controller_class_for'
+actionpack (7.1.5.2) lib/action_dispatch/request/utils.rb:100:in `action_encoding_template'
+actionpack (7.1.5.2) lib/action_dispatch/request/utils.rb:85:in `encode'
+actionpack (7.1.5.2) lib/action_dispatch/request/utils.rb:45:in `set_binary_encoding'
+actionpack (7.1.5.2) lib/action_dispatch/http/parameters.rb:68:in `path_parameters='
+actionpack (7.1.5.2) lib/action_dispatch/journey/router.rb:48:in `block in serve'
+actionpack (7.1.5.2) lib/action_dispatch/journey/router.rb:131:in `block in find_routes'
+actionpack (7.1.5.2) lib/action_dispatch/journey/router.rb:124:in `each'
+actionpack (7.1.5.2) lib/action_dispatch/journey/router.rb:124:in `find_routes'
+actionpack (7.1.5.2) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (7.1.5.2) lib/action_dispatch/routing/route_set.rb:882:in `call'
+rack (3.2.3) lib/rack/tempfile_reaper.rb:20:in `call'
+rack (3.2.3) lib/rack/etag.rb:29:in `call'
+rack (3.2.3) lib/rack/conditional_get.rb:31:in `call'
+rack (3.2.3) lib/rack/head.rb:15:in `call'
+actionpack (7.1.5.2) lib/action_dispatch/http/permissions_policy.rb:36:in `call'
+actionpack (7.1.5.2) lib/action_dispatch/http/content_security_policy.rb:36:in `call'
+rack-session (2.1.1) lib/rack/session/abstract/id.rb:274:in `context'
+rack-session (2.1.1) lib/rack/session/abstract/id.rb:268:in `call'
+actionpack (7.1.5.2) lib/action_dispatch/middleware/cookies.rb:689:in `call'
+activerecord (7.1.5.2) lib/active_record/migration.rb:655:in `call'
+actionpack (7.1.5.2) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+activesupport (7.1.5.2) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (7.1.5.2) lib/action_dispatch/middleware/callbacks.rb:28:in `call'
+actionpack (7.1.5.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.1.5.2) lib/action_dispatch/middleware/actionable_exceptions.rb:16:in `call'
+actionpack (7.1.5.2) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+web-console (4.2.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.1.5.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (7.1.5.2) lib/rails/rack/logger.rb:37:in `call_app'
+railties (7.1.5.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (7.1.5.2) lib/active_support/tagged_logging.rb:139:in `block in tagged'
+activesupport (7.1.5.2) lib/active_support/tagged_logging.rb:39:in `tagged'
+activesupport (7.1.5.2) lib/active_support/tagged_logging.rb:139:in `tagged'
+activesupport (7.1.5.2) lib/active_support/broadcast_logger.rb:241:in `method_missing'
+railties (7.1.5.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.5.2) lib/sprockets/rails/quiet_assets.rb:17:in `call'
+actionpack (7.1.5.2) lib/action_dispatch/middleware/remote_ip.rb:92:in `call'
+actionpack (7.1.5.2) lib/action_dispatch/middleware/request_id.rb:28:in `call'
+rack (3.2.3) lib/rack/method_override.rb:28:in `call'
+rack (3.2.3) lib/rack/runtime.rb:24:in `call'
+actionpack (7.1.5.2) lib/action_dispatch/middleware/server_timing.rb:59:in `block in call'
+actionpack (7.1.5.2) lib/action_dispatch/middleware/server_timing.rb:24:in `collect_events'
+actionpack (7.1.5.2) lib/action_dispatch/middleware/server_timing.rb:58:in `call'
+actionpack (7.1.5.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.1.5.2) lib/action_dispatch/middleware/static.rb:25:in `call'
+rack (3.2.3) lib/rack/sendfile.rb:131:in `call'
+actionpack (7.1.5.2) lib/action_dispatch/middleware/host_authorization.rb:141:in `call'
+railties (7.1.5.2) lib/rails/engine.rb:536:in `call'
+puma (7.0.4) lib/puma/configuration.rb:299:in `call'
+puma (7.0.4) lib/puma/request.rb:101:in `block in handle_request'
+puma (7.0.4) lib/puma/thread_pool.rb:346:in `with_force_shutdown'
+puma (7.0.4) lib/puma/request.rb:100:in `handle_request'
+puma (7.0.4) lib/puma/server.rb:506:in `process_client'
+puma (7.0.4) lib/puma/server.rb:265:in `block in run'
+puma (7.0.4) lib/puma/thread_pool.rb:173:in `block in spawn_thread'
+Started GET "/show?address=271308%27%27%27&commit=Get+Forecast" for 127.0.0.1 at 2025-10-13 13:43:36 +0530
+  
+Zeitwerk::NameError (expected file /home/aebinto/weather/Weather_F/weather_app/app/controllers/forecasts_controller.rb to define constant ForecastsController, but didn't
+
+      raise Zeitwerk::NameError.new(msg, cref.cname)
+      ^^^^^):
+  
+zeitwerk (2.6.18) lib/zeitwerk/loader/callbacks.rb:32:in `on_file_autoloaded'
+zeitwerk (2.6.18) lib/zeitwerk/kernel.rb:27:in `require'
+activesupport (7.1.5.2) lib/active_support/inflector/methods.rb:290:in `const_get'
+activesupport (7.1.5.2) lib/active_support/inflector/methods.rb:290:in `constantize'
+activesupport (7.1.5.2) lib/active_support/core_ext/string/inflections.rb:74:in `constantize'
+actionpack (7.1.5.2) lib/action_dispatch/http/request.rb:90:in `controller_class_for'
+actionpack (7.1.5.2) lib/action_dispatch/request/utils.rb:100:in `action_encoding_template'
+actionpack (7.1.5.2) lib/action_dispatch/request/utils.rb:85:in `encode'
+actionpack (7.1.5.2) lib/action_dispatch/request/utils.rb:45:in `set_binary_encoding'
+actionpack (7.1.5.2) lib/action_dispatch/http/parameters.rb:68:in `path_parameters='
+actionpack (7.1.5.2) lib/action_dispatch/journey/router.rb:48:in `block in serve'
+actionpack (7.1.5.2) lib/action_dispatch/journey/router.rb:131:in `block in find_routes'
+actionpack (7.1.5.2) lib/action_dispatch/journey/router.rb:124:in `each'
+actionpack (7.1.5.2) lib/action_dispatch/journey/router.rb:124:in `find_routes'
+actionpack (7.1.5.2) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (7.1.5.2) lib/action_dispatch/routing/route_set.rb:882:in `call'
+rack (3.2.3) lib/rack/tempfile_reaper.rb:20:in `call'
+rack (3.2.3) lib/rack/etag.rb:29:in `call'
+rack (3.2.3) lib/rack/conditional_get.rb:31:in `call'
+rack (3.2.3) lib/rack/head.rb:15:in `call'
+actionpack (7.1.5.2) lib/action_dispatch/http/permissions_policy.rb:36:in `call'
+actionpack (7.1.5.2) lib/action_dispatch/http/content_security_policy.rb:36:in `call'
+rack-session (2.1.1) lib/rack/session/abstract/id.rb:274:in `context'
+rack-session (2.1.1) lib/rack/session/abstract/id.rb:268:in `call'
+actionpack (7.1.5.2) lib/action_dispatch/middleware/cookies.rb:689:in `call'
+activerecord (7.1.5.2) lib/active_record/migration.rb:655:in `call'
+actionpack (7.1.5.2) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+activesupport (7.1.5.2) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (7.1.5.2) lib/action_dispatch/middleware/callbacks.rb:28:in `call'
+actionpack (7.1.5.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.1.5.2) lib/action_dispatch/middleware/actionable_exceptions.rb:16:in `call'
+actionpack (7.1.5.2) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+web-console (4.2.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.1.5.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (7.1.5.2) lib/rails/rack/logger.rb:37:in `call_app'
+railties (7.1.5.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (7.1.5.2) lib/active_support/tagged_logging.rb:139:in `block in tagged'
+activesupport (7.1.5.2) lib/active_support/tagged_logging.rb:39:in `tagged'
+activesupport (7.1.5.2) lib/active_support/tagged_logging.rb:139:in `tagged'
+activesupport (7.1.5.2) lib/active_support/broadcast_logger.rb:241:in `method_missing'
+railties (7.1.5.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.5.2) lib/sprockets/rails/quiet_assets.rb:17:in `call'
+actionpack (7.1.5.2) lib/action_dispatch/middleware/remote_ip.rb:92:in `call'
+actionpack (7.1.5.2) lib/action_dispatch/middleware/request_id.rb:28:in `call'
+rack (3.2.3) lib/rack/method_override.rb:28:in `call'
+rack (3.2.3) lib/rack/runtime.rb:24:in `call'
+actionpack (7.1.5.2) lib/action_dispatch/middleware/server_timing.rb:59:in `block in call'
+actionpack (7.1.5.2) lib/action_dispatch/middleware/server_timing.rb:24:in `collect_events'
+actionpack (7.1.5.2) lib/action_dispatch/middleware/server_timing.rb:58:in `call'
+actionpack (7.1.5.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.1.5.2) lib/action_dispatch/middleware/static.rb:25:in `call'
+rack (3.2.3) lib/rack/sendfile.rb:131:in `call'
+actionpack (7.1.5.2) lib/action_dispatch/middleware/host_authorization.rb:141:in `call'
+railties (7.1.5.2) lib/rails/engine.rb:536:in `call'
+puma (7.0.4) lib/puma/configuration.rb:299:in `call'
+puma (7.0.4) lib/puma/request.rb:101:in `block in handle_request'
+puma (7.0.4) lib/puma/thread_pool.rb:346:in `with_force_shutdown'
+puma (7.0.4) lib/puma/request.rb:100:in `handle_request'
+puma (7.0.4) lib/puma/server.rb:506:in `process_client'
+puma (7.0.4) lib/puma/server.rb:265:in `block in run'
+puma (7.0.4) lib/puma/thread_pool.rb:173:in `block in spawn_thread'
+[dotenv] Set [36mWEATHER_API_KEY[0m
+[dotenv] Loaded [33m.env[0m
+Started GET "/show?address=271308%27%27%27&commit=Get+Forecast" for 127.0.0.1 at 2025-10-13 13:43:45 +0530
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+Zeitwerk::NameError (expected file /home/aebinto/weather/Weather_F/weather_app/app/controllers/forecasts_controller.rb to define constant ForecastsController, but didn't
+
+      raise Zeitwerk::NameError.new(msg, cref.cname)
+      ^^^^^):
+  
+zeitwerk (2.6.18) lib/zeitwerk/loader/callbacks.rb:32:in `on_file_autoloaded'
+zeitwerk (2.6.18) lib/zeitwerk/kernel.rb:27:in `require'
+activesupport (7.1.5.2) lib/active_support/inflector/methods.rb:290:in `const_get'
+activesupport (7.1.5.2) lib/active_support/inflector/methods.rb:290:in `constantize'
+activesupport (7.1.5.2) lib/active_support/core_ext/string/inflections.rb:74:in `constantize'
+actionpack (7.1.5.2) lib/action_dispatch/http/request.rb:90:in `controller_class_for'
+actionpack (7.1.5.2) lib/action_dispatch/request/utils.rb:100:in `action_encoding_template'
+actionpack (7.1.5.2) lib/action_dispatch/request/utils.rb:85:in `encode'
+actionpack (7.1.5.2) lib/action_dispatch/request/utils.rb:45:in `set_binary_encoding'
+actionpack (7.1.5.2) lib/action_dispatch/http/parameters.rb:68:in `path_parameters='
+actionpack (7.1.5.2) lib/action_dispatch/journey/router.rb:48:in `block in serve'
+actionpack (7.1.5.2) lib/action_dispatch/journey/router.rb:131:in `block in find_routes'
+actionpack (7.1.5.2) lib/action_dispatch/journey/router.rb:124:in `each'
+actionpack (7.1.5.2) lib/action_dispatch/journey/router.rb:124:in `find_routes'
+actionpack (7.1.5.2) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (7.1.5.2) lib/action_dispatch/routing/route_set.rb:882:in `call'
+rack (3.2.3) lib/rack/tempfile_reaper.rb:20:in `call'
+rack (3.2.3) lib/rack/etag.rb:29:in `call'
+rack (3.2.3) lib/rack/conditional_get.rb:31:in `call'
+rack (3.2.3) lib/rack/head.rb:15:in `call'
+actionpack (7.1.5.2) lib/action_dispatch/http/permissions_policy.rb:36:in `call'
+actionpack (7.1.5.2) lib/action_dispatch/http/content_security_policy.rb:36:in `call'
+rack-session (2.1.1) lib/rack/session/abstract/id.rb:274:in `context'
+rack-session (2.1.1) lib/rack/session/abstract/id.rb:268:in `call'
+actionpack (7.1.5.2) lib/action_dispatch/middleware/cookies.rb:689:in `call'
+activerecord (7.1.5.2) lib/active_record/migration.rb:655:in `call'
+actionpack (7.1.5.2) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+activesupport (7.1.5.2) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (7.1.5.2) lib/action_dispatch/middleware/callbacks.rb:28:in `call'
+actionpack (7.1.5.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.1.5.2) lib/action_dispatch/middleware/actionable_exceptions.rb:16:in `call'
+actionpack (7.1.5.2) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+web-console (4.2.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.1.5.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (7.1.5.2) lib/rails/rack/logger.rb:37:in `call_app'
+railties (7.1.5.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (7.1.5.2) lib/active_support/tagged_logging.rb:139:in `block in tagged'
+activesupport (7.1.5.2) lib/active_support/tagged_logging.rb:39:in `tagged'
+activesupport (7.1.5.2) lib/active_support/tagged_logging.rb:139:in `tagged'
+activesupport (7.1.5.2) lib/active_support/broadcast_logger.rb:241:in `method_missing'
+railties (7.1.5.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.5.2) lib/sprockets/rails/quiet_assets.rb:17:in `call'
+actionpack (7.1.5.2) lib/action_dispatch/middleware/remote_ip.rb:92:in `call'
+actionpack (7.1.5.2) lib/action_dispatch/middleware/request_id.rb:28:in `call'
+rack (3.2.3) lib/rack/method_override.rb:28:in `call'
+rack (3.2.3) lib/rack/runtime.rb:24:in `call'
+actionpack (7.1.5.2) lib/action_dispatch/middleware/server_timing.rb:59:in `block in call'
+actionpack (7.1.5.2) lib/action_dispatch/middleware/server_timing.rb:24:in `collect_events'
+actionpack (7.1.5.2) lib/action_dispatch/middleware/server_timing.rb:58:in `call'
+actionpack (7.1.5.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.1.5.2) lib/action_dispatch/middleware/static.rb:25:in `call'
+rack (3.2.3) lib/rack/sendfile.rb:131:in `call'
+actionpack (7.1.5.2) lib/action_dispatch/middleware/host_authorization.rb:141:in `call'
+railties (7.1.5.2) lib/rails/engine.rb:536:in `call'
+puma (7.0.4) lib/puma/configuration.rb:299:in `call'
+puma (7.0.4) lib/puma/request.rb:101:in `block in handle_request'
+puma (7.0.4) lib/puma/thread_pool.rb:346:in `with_force_shutdown'
+puma (7.0.4) lib/puma/request.rb:100:in `handle_request'
+puma (7.0.4) lib/puma/server.rb:506:in `process_client'
+puma (7.0.4) lib/puma/server.rb:265:in `block in run'
+puma (7.0.4) lib/puma/thread_pool.rb:173:in `block in spawn_thread'
+Started GET "/show" for 127.0.0.1 at 2025-10-13 13:43:54 +0530
+  
+ActionController::RoutingError (uninitialized constant ForecastsController
+
+      Object.const_get(camel_cased_word)
+            ^^^^^^^^^^
+Did you mean?  ForecastsHelper
+
+            raise MissingController.new(error.message, error.name)
+            ^^^^^):
+  
+Started GET "/show" for 127.0.0.1 at 2025-10-13 13:45:52 +0530
+Processing by ForecastsController#show as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering forecasts/show.html.erb within layouts/application
+  Rendered forecasts/show.html.erb within layouts/application (Duration: 1.7ms | Allocations: 841)
+  Rendered layout layouts/application.html.erb (Duration: 46.6ms | Allocations: 44187)
+Completed 200 OK in 52ms (Views: 48.6ms | ActiveRecord: 0.0ms | Allocations: 46509)
+
+
+Started GET "/show?address=271308&commit=Get+Forecast" for 127.0.0.1 at 2025-10-13 13:45:58 +0530
+Processing by ForecastsController#show as HTML
+  Parameters: {"address"=>"271308", "commit"=>"Get Forecast"}
+  Rendering layout layouts/application.html.erb
+  Rendering forecasts/show.html.erb within layouts/application
+  Rendered forecasts/show.html.erb within layouts/application (Duration: 1.1ms | Allocations: 369)
+  Rendered layout layouts/application.html.erb (Duration: 4.6ms | Allocations: 1516)
+Completed 200 OK in 1448ms (Views: 5.5ms | ActiveRecord: 0.0ms | Allocations: 3162)
+
+
+Started GET "/show?address=229001&commit=Get+Forecast" for 127.0.0.1 at 2025-10-13 13:46:22 +0530
+Processing by ForecastsController#show as HTML
+  Parameters: {"address"=>"229001", "commit"=>"Get Forecast"}
+  Rendering layout layouts/application.html.erb
+  Rendering forecasts/show.html.erb within layouts/application
+  Rendered forecasts/show.html.erb within layouts/application (Duration: 1.5ms | Allocations: 337)
+  Rendered layout layouts/application.html.erb (Duration: 4.6ms | Allocations: 1484)
+Completed 200 OK in 1237ms (Views: 5.5ms | ActiveRecord: 0.0ms | Allocations: 2801)
+
+
+Started GET "/show?address=229001&commit=Get+Forecast" for 127.0.0.1 at 2025-10-13 13:49:11 +0530
+Processing by ForecastsController#show as HTML
+  Parameters: {"address"=>"229001", "commit"=>"Get Forecast"}
+  Rendering layout layouts/application.html.erb
+  Rendering forecasts/show.html.erb within layouts/application
+  Rendered forecasts/show.html.erb within layouts/application (Duration: 2.6ms | Allocations: 999)
+  Rendered layout layouts/application.html.erb (Duration: 20.4ms | Allocations: 21675)
+Completed 200 OK in 2463ms (Views: 23.2ms | ActiveRecord: 0.0ms | Allocations: 25819)
+
+
+Started GET "/show?address=271308&commit=Get+Forecast" for 127.0.0.1 at 2025-10-13 13:49:20 +0530
+Processing by ForecastsController#show as HTML
+  Parameters: {"address"=>"271308", "commit"=>"Get Forecast"}
+  Rendering layout layouts/application.html.erb
+  Rendering forecasts/show.html.erb within layouts/application
+  Rendered forecasts/show.html.erb within layouts/application (Duration: 0.5ms | Allocations: 361)
+  Rendered layout layouts/application.html.erb (Duration: 1.9ms | Allocations: 1508)
+Completed 200 OK in 1820ms (Views: 2.3ms | ActiveRecord: 0.0ms | Allocations: 4262)
+
+
